@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Introdução ao Vue JS</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+
+
+    <div id="app">
+     
+        <titulo nome="Lucas Andrad Pontes - O GOSTOSO"></titulo>
+
+    </div>
+    
+
+    <script type="text/javascript">
+
+        Vue.component('titulo',{
+          props:['nome2'],
+          template:'<h2>{{nome2}}</h2>',
+        });
+
+      let app = new Vue({
+        el:"#app",
+      });
+
+    </script>
+
+  </body>
+</html>
